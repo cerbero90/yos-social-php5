@@ -402,7 +402,7 @@ class YahooOAuthApplication
      $update = array_merge($defaults, $params);
      $body = array('updates' => array($update));
      
-     $url = sprintf("http://social.yahooapis.com/v1/user/%s/updates/%s/%s", $update['collectionID'], $update['source'], $update['suid']);
+     $url = sprintf("https://social.yahooapis.com/v1/user/%s/updates/%s/%s", $update['collectionID'], $update['source'], $update['suid']);
      
      $oauth_request = OAuthRequest::from_consumer_and_token($this->consumer, $this->token, YahooCurl::PUT, $url);
      $oauth_request->sign_request($this->signature_method_hmac_sha1, $this->consumer, $this->token);

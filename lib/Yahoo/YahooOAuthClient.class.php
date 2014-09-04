@@ -43,7 +43,7 @@ class YahooOAuthClient
   const REQUEST_TOKEN_API_URL = 'https://api.login.yahoo.com/oauth/v2/get_request_token';
   const AUTHORIZATION_API_URL = 'https://api.login.yahoo.com/oauth/v2/request_auth';
   const ACCESS_TOKEN_API_URL  = 'https://api.login.yahoo.com/oauth/v2/get_token';
-  const SOCIAL_API_URL        = 'http://social.yahooapis.com/v1';
+  const SOCIAL_API_URL        = 'https://social.yahooapis.com/v1';
 
   # http://developer.yahoo.com/oauth/guide/oauth-auth-flow.html
 
